@@ -9,47 +9,110 @@
 </head>
 
 <body>
-    <!--
-        <h1>Mi Portafolio</h1>
+    <header>
         <nav>
             <ul>
                 <li><a href="#sobre-mi">Sobre Mí</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#habilidades">Proyectos</a></li>
+                <li><a href="#Lenguajes">Lenguajes y tecnologias</a></li>
+
             </ul>
         </nav>
-  -->
-
-    <section id="inicio">
+    </header>
+    <div>
+        <img src="../static/gra.jpg" alt="" class="gra">
+    </div>
+    <section id="inicio" class="inicio">
         <img src="../static/memoji.png" alt="Mi Foto de Perfil" class="profilep">
-        <h2>Hola, soy Joceline</h2>
-        <p>Ingeniero en Computación apasionado por el desarrollo de software y la tecnología.</p>
+        <div class="texto">
+            <h2>Hola, soy </h2>
+            <h2 class="nombre">Joceline</h2>
+            <p>Estudiante de ingenieria en computación, apacionada por el desarrollo de software y tecnolgia</p>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=joceline.delatorresegura@gmail.com&body=Hola%2C%20me%20gustar%C3%ADa%20contactarme%20contigo." target="_blank">
+                <button class="contacta">Contáctame</button>
+            </a>
+
+
+        </div>
+
     </section>
 
     <section id="sobre-mi">
-        <h2>Sobre Mí</h2>
-        <p>Aquí puedes escribir un poco más sobre tu experiencia, estudios y motivaciones.</p>
+        <div class="contenido-sobre-mi">
+            <div class="contenido">
+                <img src="../static/estudiosa.jpg" alt="Imagen sobre mí" class="imagen-sobre-mi">
+                <div class="texto-sobre-mi">
+                    <h2>Sobre Mí</h2>
+                    <p>Soy una estudiante apasionada de Ingeniería en Computación, actualmente cursando el sexto semestre de mi carrera. Aunque tengo poca experiencia laboral formal hasta ahora, me he dedicado a aprender de manera autodidacta a través de
+                        proyectos personales, trabajo en equipo y prácticas académicas. Disfruto de los retos y siempre busco aprender nuevas herramientas y tecnologías que me permitan mejorar como profesional. Mi enfoque está en seguir desarrollando
+                        mis habilidades técnicas, y me interesa poder contribuir con mi creatividad y capacidad para resolver problemas a proyectos que tengan un impacto real. </p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="proyectos">
-        <h2>Proyectos</h2>
-        <p>Listado de proyectos en los que has trabajado con enlaces a GitHub u otras plataformas.</p>
-    </section>
+
+
 
     <section id="habilidades">
-        <h2>Habilidades</h2>
-        <p>Lista de tecnologías y herramientas que dominas.</p>
+
+        <h1>Proyectos y Experiencia</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Año</th>
+                    <th>Lenguaje / Tecnología / Empresa</th>
+                    <th>Descripción del Proyecto / Experiencia</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2024</td>
+                    <td>HTML, CSS, Python, Flask, MySQL, JavaScript</td>
+                    <td>Desarrollo de una aplicación web orientada a la gestión de ventas, implementando funcionalidades CRUD para la administración de empleados y productos.</td>
+                </tr>
+                <tr>
+                    <td>2024</td>
+                    <td>Soporte SCC</td>
+                    <td>Brindé soporte en la gestión de una base de datos contable empresarial, asegurando la correcta manipulación de datos financieros.</td>
+                </tr>
+                <tr>
+                    <td>2023</td>
+                    <td>HTML, CSS, PHP, MySQL</td>
+                    <td>Desarrollo de una página web para la gestión de una librería, incluyendo un sistema de préstamos y administración de inventarios.</td>
+                </tr>
+                <tr>
+                    <td>2022</td>
+                    <td>C#, Visual Studio</td>
+                    <td>Creación de una aplicación web para el seguimiento y registro de calorías, permitiendo a los usuarios realizar un seguimiento de su progreso en términos de salud.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="lenguajes" id="Lenguajes">
+        <h1>Lenguajes y Tecnologías</h1>
+        <div class="circulos">
+            <div class="circulo">
+                <img src="../static/python.png" alt="python">
+            </div>
+            <div class="circulo">
+                <img src="../static/text.png" alt="Java">
+            </div>
+            <div class="circulo">
+                <img src="../static/sql.png" alt="Java">
+            </div>
+            <div class="circulo">
+                <img src="../static/html.png" alt="Java">
+            </div>
+            <div class="circulo">
+                <img src="../static/flask.png" alt="Java">
+            </div>
+        </div>
     </section>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Formulario de contacto o enlaces a redes sociales.</p>
-    </section>
 
-    <footer>
-        <p>&copy; 2025 [Tu Nombre]. Todos los derechos reservados.</p>
-    </footer>
+
+
 </body>
 
 </html>

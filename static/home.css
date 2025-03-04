@@ -1,16 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sofadi+One&display=swap');
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: "Poppins";
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../static/gra.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 header {
-    background-color: #6a0dad;
-    color: white;
+    background-color: hsla(260, 9%, 93%, 0.418);
     text-align: center;
     padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Línea punteada */
+    margin-bottom: 50px;
+}
+
+.nombre {
+    margin-top: -15px;
+    font-family: "Barriecito", system-ui;
+    font-size: 50px;
+    font-style: normal;
+    background: linear-gradient(45deg, #ce098c, #205bfc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 nav ul {
@@ -24,8 +44,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #6a4c93;
     text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: rgb(219, 0, 128);
+    transition: color 0.3s;
 }
 
 section {
@@ -33,25 +59,208 @@ section {
     text-align: center;
 }
 
+.inicio {
+    display: flex;
+    flex-direction: column;
+    /* Para alinear los elementos en columna */
+    align-items: center;
+    /* Centra horizontalmente */
+    justify-content: center;
+    margin-top: 40px;
+    /* Centra verticalmente */
+    /* Ocupa toda la altura de la pantalla */
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+}
+
 #inicio img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin-top: 10px;
-}
-
-footer {
-    background-color: #6a0dad;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 20px;
+    /* Espacio debajo de la imagen */
 }
 
 .profilep {
-    width: 200px;
-    height: 200px;
+    width: 600px;
+    /* Ajusta el tamaño de la imagen */
+    height: auto;
     border-radius: 10px;
-    margin-top: 80px;
+    /* Bordes redondeados opcionales */
+}
+
+.texto {
+    width: 55%;
+    /* Ajusta el tamaño del texto */
+    font-size: 18px;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: transparent;
+    /* Fondo transparente */
+    border: 3px solid #7f1fac;
+    /* Bordes visibles */
+    box-shadow: none;
+    /* Sin sombra para un estilo más limpio */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 12px;
     border: 1px solid #ddd;
+    /* Bordes de las celdas */
+    text-align: left;
+}
+
+th {
+    background-color: transparent;
+    /* Fondo transparente para los encabezados */
+    color: #624788;
+    /* Color morado para el texto */
+}
+
+tr:nth-child(even) {
+    background-color: transparent;
+    /* Fondo transparente para filas pares */
+}
+
+tr:hover {
+    background-color: rgba(83, 45, 250, 0.1);
+    /* Fondo suave en hover */
+}
+
+.gra {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.contacta {
+    margin-top: 15px;
+    background: linear-gradient(45deg, #1d5fec, #ff44c1);
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 21px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.726);
+}
+
+.contacta:hover {
+    opacity: 0.6;
+}
+
+.lenguajes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: -10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #4b3668;
+}
+
+.circulos {
+    display: flex;
+    /* Esto pone los círculos en una fila */
+    justify-content: center;
+    /* Centra los círculos en la fila */
+    align-items: center;
+    /* Asegura que los círculos estén alineados verticalmente */
+    gap: 40px;
+    /* Espacio entre los círculos */
+    margin-bottom: 20px;
+}
+
+.circulo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.circulo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.circulo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#sobre-mi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    min-height: 400px;
+}
+
+.contenido-sobre-mi {
+    background: #ffffff83;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.432);
+    max-width: 1000px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.imagen-sobre-mi {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.726);
+    border: 2px solid #4b366846;
+}
+
+.texto-sobre-mi {
+    max-width: 800px;
+    text-align: left;
+}
+
+#sobre-mi h2 {
+    font-size: 2rem;
+    color: #6a4c93;
+    margin-bottom: 15px;
+}
+
+#sobre-mi p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
 }
